@@ -1,0 +1,20 @@
+.faq {
+}
+
+.wrapper {
+  border-bottom: 1px solid #1358e3;
+}
+
+.heading {
+  margin-bottom: 86px;
+  h2 {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 105.5%;
+    text-align: center;
+    color: #1c1b27;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 25px;
+  }
+}

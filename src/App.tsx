@@ -1,24 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useRef } from "react";
+
+import { Banner } from "./components/banner";
+import { Footer } from "./components/footer/Footer";
+import { Header } from "./components/header";
+import Parallax from "parallax-js";
+import WOW from "wowjs";
+import { Attention } from "./components/attention";
+import { Advert } from "./components/advert";
+import { Clock } from "./components/clock";
+import { Help } from "./components/help";
+import { Attracting } from "./components/attracting";
+import { Work } from "./components/work";
+import { Create } from "./components/create";
+import { Customers } from "./components/customers";
+import { Answer } from "./components/answer";
+import { Pricing } from "./components/pricing";
 
 function App() {
+  useEffect(() => {
+    new WOW.WOW().init();
+    if (window.innerWidth > 767) {
+      const text = document.getElementsByClassName("prl");
+      Array.from(text).forEach((i) => new Parallax(i));
+    }
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <Header />
+      <Banner />
+      <Attention />
+      <Advert />
+      <Clock />
+      <Help />
+      <Attracting />
+      <Work />
+      <Create />
+      <Customers />
+      <Answer />
+      <Pricing />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,151 @@
+.h2 {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 137%;
+  text-align: center;
+  color: #ffffff;
+  max-width: 995px;
+  margin: 0 auto 200px;
+  @media (max-width: 992px) {
+    font-size: 30px;
+    max-width: 427px;
+  }
+  @media (max-width: 767px) {
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 60px;
+    font-size: 25px;
+  }
+}
+
+@keyframes chelanim {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.images {
+  position: relative;
+  max-width: 1200px;
+
+  margin: 0 auto;
+  width: 100%;
+  &__main {
+    position: relative;
+    top: 0;
+    right: 0%;
+    @media (max-width: 1600px) {
+      width: 700px;
+    }
+    @media (max-width: 1120px) {
+      width: 500px;
+    }
+    @media (max-width: 840px) {
+      width: 464px;
+    }
+    @media (max-width: 600px) {
+    }
+  }
+  &__one {
+    position: absolute;
+    top: -135px;
+    right: 3%;
+    animation: 5s linear 0s normal none infinite running chelanim;
+    @media (max-width: 1600px) {
+      width: 200px;
+      right: 23%;
+    }
+    @media (max-width: 1120px) {
+      width: 140px;
+    }
+    @media (max-width: 840px) {
+      width: 110px;
+    }
+    @media (max-width: 600px) {
+      width: 75px;
+      top: 46px;
+    }
+  }
+  &__two {
+    position: absolute;
+    top: 122px;
+    right: 14%;
+    animation: 5s linear 0s normal none infinite running chelanim;
+    @media (max-width: 1600px) {
+      width: 200px;
+      right: 30%;
+    }
+    @media (max-width: 1120px) {
+      width: 140px;
+      top: 29px;
+    }
+    @media (max-width: 840px) {
+      width: 90px;
+    }
+    @media (max-width: 600px) {
+      width: 51px;
+      top: 29px;
+      right: 0%;
+    }
+  }
+  &__three {
+    position: absolute;
+    top: 75px;
+    right: -16%;
+    animation: 5s linear 0s normal none infinite running chelanim;
+    @media (max-width: 1600px) {
+      width: 240px;
+      right: 11%;
+    }
+    @media (max-width: 1120px) {
+      width: 140px;
+      top: 10px;
+    }
+    @media (max-width: 840px) {
+      width: 100px;
+    }
+    @media (max-width: 600px) {
+      width: 85px;
+      top: -30px;
+      right: 2%;
+    }
+  }
+  &__four {
+    position: absolute;
+    top: -4px;
+    right: 39%;
+    animation: 5s linear 0s normal none infinite running chelanim;
+    @media (max-width: 1600px) {
+      width: 200px;
+      right: 51%;
+    }
+    @media (max-width: 1120px) {
+      width: 140px;
+      top: -46px;
+    }
+    @media (max-width: 840px) {
+      width: 100px;
+      right: 47%;
+    }
+    @media (max-width: 600px) {
+      width: 70px;
+      top: -18px;
+      right: 25%;
+    }
+  }
+}
+
+.container {
+  padding-top: 160px;
+  @media (max-width: 992px) {
+    padding-top: 52px;
+  }
+  @media (max-width: 767px) {
+  }
+}

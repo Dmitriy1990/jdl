@@ -1,0 +1,321 @@
+.container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media (max-width: 992px) {
+    padding-top: 53px;
+    padding-bottom: 53px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 137%;
+  text-align: center;
+  color: #1c1b27;
+  margin-bottom: 80px;
+  @media (max-width: 992px) {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 767px) {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.blocks {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.block {
+  position: relative;
+  background: #374ff2;
+  border-radius: 15px;
+  padding: 23px 18px;
+  @media (max-width: 1450px) {
+    padding: 10px 12px;
+  }
+  &--pink {
+    background: #de5ae4;
+  }
+  &--grad {
+    background: linear-gradient(
+        104.42deg,
+        #de5ae4 6.07%,
+        #374ff2 36.97%,
+        #de5ae4 74.36%
+      ),
+      linear-gradient(0deg, #de5ae4, #de5ae4),
+      linear-gradient(104.42deg, #de5ae4 6.07%, #374ff2 36.97%, #de5ae4 74.36%),
+      #de5ae4;
+  }
+  &-arrow {
+    &--top {
+      display: block;
+      position: absolute;
+      top: -34px;
+      right: -48px;
+      @media (max-width: 1450px) {
+        svg {
+          width: 36px;
+        }
+        right: -24px;
+      }
+    }
+
+    &--bottom {
+      display: block;
+      position: absolute;
+      bottom: -34px;
+      right: -48px;
+      @media (max-width: 1450px) {
+        svg {
+          width: 36px;
+        }
+        right: -24px;
+      }
+    }
+    &--pink {
+      path {
+        fill: #de5ae4;
+      }
+    }
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #ffffff;
+    @media (max-width: 1450px) {
+      font-size: 14px;
+      line-height: 130%;
+    }
+  }
+  &__count {
+    background: #374ff2;
+    border: 2px solid #f9fbff;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 33px;
+    color: #fff;
+    vertical-align: middle;
+    margin-top: -40px;
+    margin-left: -14px;
+    @media (max-width: 1450px) {
+      font-size: 12px;
+      width: 23px;
+      height: 23px;
+      line-height: 20px;
+      margin-top: -33px;
+    }
+    &--pink {
+      background: #de5ae4;
+    }
+  }
+  &--one {
+    width: 278px;
+    min-height: 167px;
+    // margin-right: 42px;
+    @media (max-width: 1450px) {
+      width: 152px;
+      min-height: 108px;
+      p {
+        margin-top: 10px;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 243.25px;
+      height: 280px;
+      opacity: 0.3;
+      border: 1px solid #ffffff;
+      bottom: 0;
+      right: -102px;
+      border-radius: 50%;
+      @media (max-width: 1450px) {
+        width: 133px;
+        height: 161px;
+        right: -56px;
+      }
+    }
+  }
+  &--two {
+    width: 320px;
+    min-height: 167px;
+    // margin-right: 38px;
+    @media (max-width: 1450px) {
+      width: 191px;
+      min-height: 108px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 240px;
+      opacity: 0.3;
+      border: 1px solid #ffffff;
+      bottom: 33px;
+      right: -122px;
+      border-radius: 50%;
+      @media (max-width: 1450px) {
+        width: 167.82px;
+        height: 138px;
+        bottom: 17px;
+        right: -37px;
+      }
+    }
+  }
+  &--three {
+    width: 280px;
+    min-height: 167px;
+    background: linear-gradient(
+        104.42deg,
+        #374ff2 36.97%,
+        #eb1cd6 74.36%,
+        #1c37eb 90.62%
+      ),
+      #374ff2;
+    @media (max-width: 1450px) {
+      width: 168px;
+      min-height: 108px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 311px;
+      height: 280px;
+      opacity: 0.3;
+      border: 1px solid #ffffff;
+      bottom: 0px;
+      right: -157px;
+      border-radius: 50%;
+      @media (max-width: 1450px) {
+        width: 186.58px;
+        height: 161px;
+        bottom: 0px;
+        right: -115px;
+      }
+    }
+  }
+  &--four {
+    width: 280px;
+    min-height: 167px;
+    overflow: hidden;
+    @media (max-width: 1450px) {
+      width: 168px;
+      min-height: 108px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 311px;
+      height: 280px;
+      opacity: 0.3;
+      border: 1px solid #ffffff;
+      bottom: 31px;
+      right: -181px;
+      border-radius: 50%;
+      @media (max-width: 1450px) {
+        width: 167.82px;
+        height: 150.82px;
+        bottom: 22px;
+        right: -82px;
+      }
+    }
+  }
+}
+
+.svgtext {
+  text-align: center;
+  padding-top: 120px;
+  padding-left: 80px;
+  padding-right: 80px;
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+  @media (max-width: 992px) {
+    padding-top: 90px;
+  }
+  @media (max-width: 767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+}
+
+.slide {
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    & > div {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.nav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 99;
+  @media (max-width: 767px) {
+    display: flex;
+  }
+  &-count {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 190%;
+    color: #374ff2;
+    margin: 0 40px;
+    min-width: 70px;
+    text-align: center;
+  }
+  &-arrow {
+    width: 44.69px;
+    height: 44.69px;
+    flex: none;
+    border: 3px solid #374ff2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    appearance: none;
+    background: transparent;
+    transition: 0.2s;
+    path {
+      transition: 0.2s;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:hover,
+    &:active {
+      background: #374ff2;
+      path {
+        stroke: #fff;
+      }
+    }
+    &--left {
+      transform: rotate(180deg);
+    }
+  }
+}

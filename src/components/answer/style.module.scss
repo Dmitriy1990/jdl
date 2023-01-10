@@ -1,0 +1,322 @@
+.answer {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  background: url("../../assets/svg/2lines2.svg") no-repeat;
+  background-position: 0% 62%;
+  @media (max-width: 992px) {
+    background-size: contain;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-position: 0% 50%;
+  }
+  @media (max-width: 767px) {
+    background-position: 0% 57%;
+  }
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 137%;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 140px;
+  @media (max-width: 992px) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__left {
+    max-width: 483px;
+    margin-right: 60px;
+    @media (max-width: 992px) {
+      max-width: 245px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+  &__right {
+    max-width: 669px;
+    @media (max-width: 992px) {
+      max-width: 314px;
+    }
+  }
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  color: #ffffff;
+  padding-bottom: 60px;
+  &-wrap {
+    display: block;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  @media (max-width: 992px) {
+    font-size: 14px;
+  }
+  &-one {
+    position: relative;
+    border-radius: 50%;
+    text-align: center;
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    vertical-align: middle;
+    background: #de5ae4;
+    margin-right: 40px;
+    flex: none;
+    @media (max-width: 992px) {
+      width: 91.77px;
+      height: 91.77px;
+      line-height: 91.77px;
+      margin-top: 20px;
+      margin-right: 23px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+  &-block {
+    background: #4259fa;
+    border-radius: 20px;
+    padding: 14px 23px 24px 23px;
+    position: relative;
+    margin-right: 40px;
+    @media (max-width: 992px) {
+      padding: 8px 12px;
+      min-height: 123px;
+      margin-right: 23px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+  &-two {
+    width: 318px;
+    @media (max-width: 992px) {
+      width: 182px;
+    }
+  }
+  &-three {
+    width: 279px;
+    @media (max-width: 992px) {
+      width: 160px;
+    }
+  }
+  &-four {
+    width: 400px;
+    position: relative;
+    svg {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      width: 27px;
+      height: auto;
+    }
+    @media (max-width: 992px) {
+      width: 206px;
+    }
+  }
+  &-arrow {
+    &--top {
+      display: block;
+      position: absolute;
+      top: -34px;
+      right: -48px;
+      @media (max-width: 992px) {
+        top: -26px;
+        right: -26px;
+        svg {
+          width: 26px;
+        }
+      }
+      &.first {
+        top: -90px;
+        right: -40px;
+        @media (max-width: 992px) {
+          top: -57px;
+          right: -23px;
+        }
+      }
+    }
+    &--bottom {
+      display: block;
+      position: absolute;
+      bottom: -40px;
+      right: -48px;
+      @media (max-width: 992px) {
+        bottom: -32px;
+        right: -26px;
+        svg {
+          width: 26px;
+        }
+      }
+    }
+    &--white {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.heading2 {
+  margin: 350px auto 130px;
+  @media (max-width: 992px) {
+    margin-top: 200px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 100px;
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 95px;
+    line-height: 140%;
+    text-align: center;
+    color: #ffffff;
+    @media (max-width: 992px) {
+      font-size: 50px;
+    }
+    @media (max-width: 767px) {
+      font-size: 40px;
+    }
+  }
+}
+
+.twoblocks {
+  display: flex;
+  justify-content: center;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  &-block {
+    text-align: center;
+    max-width: 576px;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 140%;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 992px) {
+      font-size: 20px;
+      max-width: 306px;
+    }
+    @media (max-width: 767px) {
+    }
+    &__count {
+      width: 53px;
+      height: 53px;
+      line-height: 53px;
+      vertical-align: middle;
+      font-weight: 700;
+      font-size: 30px;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+      svg {
+        width: inherit;
+        height: inherit;
+        top: 0;
+        left: 0;
+        position: absolute;
+      }
+      @media (max-width: 992px) {
+        font-size: 20px;
+        width: 45px;
+        height: 55px;
+        line-height: 53px;
+      }
+      @media (max-width: 767px) {
+      }
+    }
+  }
+  &-left {
+    max-width: 555px;
+    @media (max-width: 992px) {
+      max-width: 263px;
+      margin-right: 66px;
+    }
+    @media (max-width: 767px) {
+      margin-right: 0;
+    }
+  }
+}
+
+.nav {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: -20px;
+  position: relative;
+  z-index: 99;
+  @media (max-width: 700px) {
+    display: flex;
+  }
+  &-count {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 190%;
+    color: #374ff2;
+    margin: 0 40px;
+    min-width: 70px;
+    text-align: center;
+  }
+  &-arrow {
+    width: 44.69px;
+    height: 44.69px;
+    flex: none;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    appearance: none;
+    background: transparent;
+    transition: 0.2s;
+    path {
+      transition: 0.2s;
+      stroke: #fff;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:hover,
+    &:active {
+      background: #fff;
+      path {
+        stroke: #374ff2;
+      }
+    }
+    &--left {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.slider {
+  display: none;
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
